@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+        *{
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-3">Netflix</h1>
+        <div class="input">
+            <form>
+                ชื่อสินค้า :
+                <input type="text" id="namePr" value="Netflix" readonly class="form-control mb-3">
+                ราคาสินค้า :
+                <input type="number" id="price" class="form-control mb-3">
+                วันเริ่มใช้ :
+                <input type="date" id="datestart" class="form-control mb-3">
+                หมดอายุ :
+                <input type="date" id="datestop" class="form-control mb-3">
+                อีเมล :
+                <input type="email" id="email" class="form-control mb-3">
+                รหัสผ่าน :
+                <input type="text" id="password" class="form-control mb-3">
+                ชื่อช่อง :
+                <input type="text" id="nameroom" class="form-control mb-3">
+                รหัสห้อง :
+                <input type="text" id="pasroom" class="form-control mb-3">
+                <input type="button" value="ส่ง" class="btn btn-success mb-3" onclick="soc()">
+                <input type="button" value="คัดลอก" class="btn btn-warning mb-3" onclick="copytext()">
+                <input type="reset" value="ล้าง" class="btn btn-danger mb-3">
+                <a href="index.html" class="btn btn-secondary mb-3">กลับหน้าหลัก</a>
+                <textarea class="form-control text-center" id="text" cols="50" rows="10" readonly></textarea>
+            </form>
+        </div>
+    </div>
+    <!--ส่วนท้าย-->
+    <br><br><br><br><br><br><br>
+    <hr class="mt-4">
+    <div class="container d-flex">
+        <h1 style="color: gray;" class="mr-5">จัดทำโดย Passive</h1>
+        <a class="mt-2" href="https://lin.ee/JY38eMq"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+    </div>
+    <script src="Netflix.js"></script>
+</body>
+</html>
